@@ -221,14 +221,6 @@ header{
 
 
 }
-
-.search-box:hover > .search-txt{
-    width: 30vw;
-    padding: 0 6px;
-
-
-}
-
 .search-box:hover > .search-btn{
     background: #f8f8f8;
 }
