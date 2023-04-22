@@ -117,7 +117,7 @@ header{
         top: 100%;
         right: -100%;
         width: 270px;
-        height: 20%;
+        height: fixed;
         background: orange;
         display: flex;
         flex-direction: column;
@@ -222,6 +222,12 @@ header{
 
 }
 
+.search-box:hover > .search-txt{
+    width: 30vw;
+    padding: 0 6px;
+
+
+}
 
 .search-box:hover > .search-btn{
     background: #f8f8f8;
