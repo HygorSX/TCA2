@@ -8,17 +8,19 @@ menu.onclick = () => {
     user.classList.toggle('open')
     
 }
-let count = 1;
-document.getElementById("radio1").checked = true;
+var radio = document.querySelector('.manual-btn')
+var cont = 1
 
-setInterval( function(){
-    nextImage();
+document.getElementById('radio1').checked = true
+
+setInterval(() =>{
+    proximaImg()
 }, 5000)
 
-function nextImage(){
-    count++;
-    if(count>4){
-        count = 1;
+function proximaImg(){
+    cont++
+    if(cont > 4){
+        cont = 1
     }
-    document.getElementById("radio"+count).checked = true;
+    document.getElementById('radio'+cont).checked = true
 }
