@@ -11,7 +11,6 @@
     --main-color: orange;
 }
 body{
-    min-height: 100vh;
     background:rgb(245, 245, 245);
     color: var(--text-color);
     overflow-x: hidden;
@@ -40,13 +39,11 @@ header{
     align-items: center;
 }
 .logo i{
-    color: var(--main-color);
     font-size: 28px;
     margin-right: 3px;
     color: rgb(130, 10, 209);
 }
 .logo span{
-    color: var(--text-color);
     font-size: 1.7rem;
     font-weight: 600;
     color: rgb(130, 10, 209);
@@ -76,7 +73,7 @@ header{
 .main a{
     margin-right: -50px;
     margin-left: 10px;
-    color: var(--text-color);
+    color:rgb(130, 10, 209);
     font-size: .8rem;
     font-weight: 500;
     transition: all .50s ease;
@@ -86,7 +83,6 @@ header{
     align-items: center;
 }
 .user i{
-    color: var(--main-color);
     font-size: 28px;
     margin-right: 7px;
     color: rgb(130, 10, 209);
@@ -101,91 +97,6 @@ header{
     z-index: 10001;
     display: none;
 }
-
-
-@media (max-width: 1320px){
-    header{
-        padding: 14px 2%;
-        padding-bottom: 70px;
-        transition: 0.2s;
-    }
-    .navbar a{
-        padding: 5px 0;
-        margin: 0px 12px;
-
-}  
-    .main a{
-        color: black;
-    }
-}
-
-@media (max-width: 905px){
-    #menu-icon{
-        display: block;
-    }
-    .navbar{
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        width: 270px;
-        height: fixed;
-        background:  mediumpurple;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        border-radius: 10px;
-        transition: all .50s ease;
-    }
-    .navbar a{
-        display: block;
-        margin: 12px 0;
-        padding: 0px 25px;
-        transition: all .50s ease; 
-    }
-    .navbar a:hover{
-        color: white;
-        transform: translateY(5px);
-    }
-    .navbar a.active{
-        color:white;
-    }
-    .navbar.open{
-        right: 2%;
-    }
-    .user{
-        position: absolute;
-        top: 67%;
-        right: -100%;
-        background: transparent;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        border-radius: 10px;
-        transition: all .50s ease;
-    }
-    .main a:hover{
-        color: white;
-    }
-    .user:hover{
-        transform: translateY(5px);
-        
-    }
-    i.ri-user-3-fill{
-        margin-right: -250%;
-    }
-    .user.open{
-        right: 13%;
-    }
-
-}
-
-@media (max-width: 1090px){
-    .navbar a{
-        font-size: 0.9rem;
-       
-    }
-}
-
 .search-box{
     position:absolute;
     top: 93px;
@@ -221,14 +132,15 @@ header{
 
 .search-btn{
     background-color: transparent;
-    width: 30px;
+    width: 15px;
     height: 30px;
-    border-radius: 80%;
+    border-radius: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: .5s;
-    padding-right: 60px;
+    position: absolute;
+    right: 4.5vw;
 
 
 }
@@ -236,10 +148,91 @@ header{
 .search-box:hover > .search-btn{
     background: #f8f8f8;
 }
+
+
+@media (max-width: 1320px){
+    header{
+        padding: 14px 2%;
+        padding-bottom: 55px;
+        transition: 0.2s;
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 12px;
+
+}  
+    .main a{
+        margin-right: 1%;
+    }
+}
+
+@media (max-width: 905px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: fixed;
+        background:  mediumpurple;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease; 
+    }
+    .navbar a:hover{
+        color: white;
+        transform: translateY(5px);
+    }
+    .navbar a.active{
+        color:white;
+    }
+    .navbar.open{
+        right: 3%;
+    }
+    .user{
+        position: absolute;
+        top: 67%;
+        right: -100%;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+    .main a:hover{
+        color: white;
+    }
+    .user:hover{
+        transform: translateY(5px);
+        
+    }
+    i.ri-user-3-fill{
+        margin-right: -250%;
+    }
+    .user.open{
+        right: 3%;
+    }
+    .main a{
+        color: black;
+    }
+    
+}
+
 @media (max-width: 1320px){
     .search-box{
         position:absolute;
-        top: 90px;
+        top: 85px;
         left: 48vw;
         transform: translate(-50%, -50%);
         background: white;
@@ -252,15 +245,26 @@ header{
         align-items: center;
         border: solid 2px orange;
     }
-        
-           
+    .search-btn{
+        position: absolute;
+        right: 2vw;
+    }
+
 }
 @media (max-width: 1090px){
     .search-box{
-        height: 35px;
+        height: 38px;
         width: 35vw;
+        margin-top: -0.5vh;
  
 }
+.navbar a{
+    font-size: 1rem;
+}
+header{
+    padding-bottom: 48px;
+}
+
 }
 
 @media (max-width: 905px){
@@ -268,24 +272,6 @@ header{
         padding-bottom: 15px;
     }
     .search-box{
-        height: 35px;
-        width: 45vw;
-        position:absolute;
-        top: 40px;
-
-
-    }
-}
-@media (max-width: 860px){
-    .search-box{
-        height: 35px;
-        width: 50vw;
-        position:absolute;
-        top: 37px;
-        margin-left: 25px;
-
-    }
-    .main a{
-        color:black ;
+        margin-top: -4.8vh;
     }
 }
