@@ -1,3 +1,10 @@
+h1{
+    padding-top: 3vh;
+    text-align: center;
+}
+.todos{
+    color: rgb(130, 10, 209);
+}
 .produtos{
     padding-top: 30px;
     display: flex;

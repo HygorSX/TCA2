@@ -148,14 +148,6 @@ header{
 .search-box:hover > .search-btn{
     background: #f8f8f8;
 }
-h1{
-    padding-top: 3.2vh;
-    text-align: center;
-}
-.todos{
-    color: rgb(130, 10, 209);
-}
-
 @media (max-width: 1320px){
     header{
         padding: 14px 2%;
