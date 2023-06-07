@@ -1,0 +1,62 @@
+.produtos{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+
+}
+.produto-card{
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 15px 2px rgb(219, 219, 219);
+    border-radius: 15px;
+    background-color: white;
+    
+}
+
+.produto-card img{
+    
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+
+}
+.produto-card a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.produto-card p{
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+}
+.preço{
+    color: grey;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.preço-atual span.preço-atual{
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    
+
+}
+p.desconto{
+    color: green;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 20px;
+}
+a.buy{
+    border: 1px solid rgb(130, 10, 209);
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 4% 8%;
+    background-color: rgb(130, 10, 209);
+    color: white;
+}
