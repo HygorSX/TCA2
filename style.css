@@ -19,7 +19,7 @@ body{
 }
 header{
     color:  white;
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     right: 0;
@@ -204,6 +204,9 @@ header{
 
 }
 @media (max-width: 905px){
+    .logo span{
+        display: none;
+    }
     #menu-icon{
         display: block;
     }
