@@ -19,7 +19,7 @@ body{
 }
 header{
     color:  white;
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0;
     right: 0;
