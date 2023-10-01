@@ -5,6 +5,7 @@
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
+    overflow-x: hidden;
 }
 :root{
     --text-color: black;
@@ -13,8 +14,6 @@
 body{
     background:#FFFFFF;
     color: var(--text-color);
-    overflow-x: hidden;
-    
 
 }
 header{
