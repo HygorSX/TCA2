@@ -75,7 +75,6 @@ form.sign-in-form {
   border-radius: 55px;
   display: grid;
   grid-template-columns: 15% 85%;
-  padding: 0 0.4rem;
   position: relative;
 }
 
@@ -95,6 +94,7 @@ form.sign-in-form {
   font-weight: 600;
   font-size: 1.1rem;
   color: #333;
+  padding: 5px;
 }
 
 .input-field input::placeholder {
@@ -142,7 +142,7 @@ form.sign-in-form {
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
-  margin: 10px 0;
+  margin: 20px 0px 0px;
   cursor: pointer;
   transition: 0.5s;
   border:1px solid #773ef1;
@@ -403,3 +403,67 @@ form.sign-in-form {
     left: 50%;
   }
 }
+
+
+.form {
+  padding: 0 40px 30px;
+}
+
+.container {
+margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.container label {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #828CAD;
+}
+
+
+
+.input-field.success input {
+  border: 2px solid #4ECA64;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.input-field.error input {
+  border: 2px solid #DB5A5A;
+  border-radius: 0px 50px 50px 0px;
+  
+  
+}
+
+.input-field.error i.img-error {
+  visibility: visible;
+  transition: 1.5s;
+}
+
+.input-field.success i.img-success {
+  visibility: visible;
+  transition: 1.5s;
+}
+
+.input-field.error small{
+  color: #DB5A5A;
+  visibility: visible;
+  margin-left: 60px;
+}
+.img-control i {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.container small {
+  visibility: hidden;
+  position: absolute;
+  margin-top: 55px;
+  font-size: 12px;
+
+}
+
+
+
