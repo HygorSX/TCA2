@@ -437,12 +437,11 @@ margin-bottom: 10px;
 
 .input-field.error i.img-error {
   visibility: visible;
-  transition: 1.5s;
 }
 
 .input-field.success i.img-success {
   visibility: visible;
-  transition: 1.5s;
+  
 }
 
 .input-field.error small{
@@ -455,6 +454,7 @@ margin-bottom: 10px;
   top: 5px;
   right: 10px;
   visibility: hidden;
+ 
 }
 
 .container small {

@@ -478,7 +478,6 @@ header{
 .produto-card, .tenis-card{
     padding-bottom: 30px;
     box-shadow: 0px 0px 15px 2px rgb(228, 228, 228);
-    border-radius: 15px;
     background-color: white;
     
     
@@ -678,6 +677,9 @@ footer{
     border-radius:  3px;
     font-weight: bold;
     background-color: white;
+}
+button a{
+    color: mediumpurple;
 }
     @media (max-width:800px ){
         .footer-col{
