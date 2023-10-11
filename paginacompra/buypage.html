@@ -49,7 +49,7 @@
             <div class="container">
                 <div class="left-side">
                 <div class="items">
-                    <div class="select-image">
+                    <div class="select-image" id="select-image">
                         <img src="../images/produto_1.avif">
                         </div>
 
@@ -68,6 +68,28 @@
 
                                     <div class="thumbnail">
                                         <img src="images_buys/VaziaMoletom.avif">
+
+                                        <script>
+                                            // Obtém todas as imagens pequenas
+                                            const smallImages = document.querySelectorAll('.thumbnail');
+                                        
+                                            // Obtém a imagem principal (certifique-se de que o elemento da imagem principal tenha um ID apropriado)
+                                            const mainImage = document.querySelector('.select-image img');
+                                        
+                                            // Adiciona um ouvinte de evento de clique a cada imagem pequena
+                                            smallImages.forEach((thumbnail) => {
+                                                thumbnail.addEventListener('click', () => {
+                                                    // Obtém o URL da imagem clicada usando o atributo src
+                                                    const newImageSrc = thumbnail.querySelector('img').getAttribute('src');
+                                        
+                                                    // Define o URL da imagem principal para o novo URL
+                                                    mainImage.src = newImageSrc;
+                                                });
+                                            });
+
+                                            
+                                        </script>
+                                                            
                                     </div>
                                     </div>
                                     </div>
