@@ -215,7 +215,7 @@ header{
         right: -100%;
         width: 270px;
         height: 300vh;
-        background:  mediumpurple;
+        background:  white;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
