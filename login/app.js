@@ -62,12 +62,7 @@ function checkInputs() {
         setSuccessFor(email)
     }
    
-    if(passwordValue === '') {
-        // mostrar erro
-        // add classe
-        setErrorFor(password, 'Preencha esse campo')
-
-    } else if(passwordValue.length < 8) { 
+    if(passwordValue.length === '' || passwordValue.length < 8) { 
         setErrorFor(password, 'Senha deve ter mais que 8 caracteres')
     } else {
         // adicionar a classe de sucesso
@@ -80,7 +75,7 @@ function checkInputs() {
         setErrorFor(passwordtwo, 'Preencha esse campo')
 
     } else if(passwordValue !== passwordtwoValue) { 
-        setErrorFor(passwordtwo, 'Senhas não tão iguais')
+        setErrorFor(passwordtwo, 'Senhas não são iguais')
     } else {
         // adicionar a classe de sucesso
         setSuccessFor(passwordtwo)

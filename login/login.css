@@ -141,7 +141,7 @@ form.sign-in-form {
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
-  margin: 20px 0px 0px;
+  margin: 40px 0px 0px;
   cursor: pointer;
   transition: 0.5s;
   border:1px solid #773ef1;
@@ -462,6 +462,11 @@ margin-bottom: 10px;
   margin-top: 55px;
   font-size: 12px;
 
+}
+.aviso {
+  font-size: 12px;
+  padding-top: 15px;
+  color: #acacac;
 }
 
 
